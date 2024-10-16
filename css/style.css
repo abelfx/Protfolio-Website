@@ -254,6 +254,11 @@ h3 {
   width: 50px;
 }
 
+.images {
+  background-color: rgb(54, 50, 67);
+  padding: 10px;
+}
+
 /* Footer */
 .footer-grid {
   color: rgb(206, 201, 248);
@@ -390,7 +395,8 @@ h3 {
 
 /* Media Queries for Mobile */
 @media (max-width: 768px) {
-  .navbar .container {
+  .navbar {
+    padding: 2px;
   }
 
   .navbar .main-menu ul {
@@ -434,8 +440,13 @@ h3 {
     font-size: 0.9em;
   }
 
-  .intro .flex .note .btn {
-    text-align: center;
+  .intro .flex .note .btn .contact,
+  .about {
+    font-size: 1.2em;
+  }
+
+  .intro .flex .note .btn .contact {
+    margin-left: 25px;
   }
 
   .intro .mypic {
@@ -450,6 +461,10 @@ h3 {
     height: 300px; /* Adjust image height for mobile */
     margin-right: 0; /* Remove margin */
     margin-top: 20px; /* Add margin for spacing */
+  }
+
+  .projects .head {
+    font-size: 2em;
   }
 
   .projects .grid h1 {

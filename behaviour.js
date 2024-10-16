@@ -27,4 +27,11 @@ document.addEventListener("DOMContentLoaded", () => {
     images1.style.display = "none";
     images2.style.display = "block";
   });
+
+  const hamburgerButton = document.querySelector(".hamburger-button");
+  const mobilemenu = document.querySelector(".mobile-menu");
+
+  hamburgerButton.addEventListener("click", () =>
+    mobilemenu.classList.toggle("active")
+  );
 });

@@ -15,7 +15,7 @@ body {
   padding: 0px auto;
 }
 
-/* Navigaton Bar */
+/* Navigation Bar */
 .navbar {
   padding: 10px;
   position: fixed;
@@ -28,12 +28,12 @@ body {
 .navbar .container .logo {
   display: block;
   padding-top: 10px;
-  /* font-size: px; */
 }
 
 .navbar .container .logo a img {
   width: 100px;
 }
+
 .navbar .container {
   display: flex;
   justify-content: space-between;
@@ -93,6 +93,7 @@ body {
   font-weight: bold;
   font-size: 2.5em;
 }
+
 .intro .flex .note h1 .violet {
   color: rgb(109, 41, 226);
 }
@@ -101,6 +102,7 @@ body {
   font-size: 0.9em;
   margin-bottom: 30px;
 }
+
 .intro .flex h1,
 h2,
 h3 {
@@ -123,46 +125,48 @@ h3 {
 
 .intro .flex .note .btn .contact,
 .about {
-  background-color: transparent;
   font-size: 1em;
-  border: groove 1px;
+  border: none;
   padding: 10px 20px;
   border-radius: 20px;
   font-weight: bold;
+  transition: 0.3s;
 }
 
-.intro .flex .note .btn .contact a,
-.about a {
+.intro .flex .note .btn .contact a {
   color: rgb(206, 201, 248);
   text-decoration: none;
 }
+
+.intro .flex .note .btn .about a {
+  color: rgb(109, 41, 226);
+  text-decoration: none;
+}
+
 .intro .flex .note .btn .contact {
   background-color: rgb(109, 41, 226);
   margin-right: 5px;
   margin-left: 10%;
-  transition: 0.3s;
 }
 
 .intro .flex .note .btn .about {
-  background-color: rgb(158, 113, 237);
-  color: black;
+  background-color: rgb(206, 201, 248);
 }
 
 .intro .flex .note .btn .contact:hover {
-  background-color: rgb(42, 31, 62);
-  color: rgb(58, 2, 155);
+  background-color: rgb(83, 34, 175);
   cursor: pointer;
 }
 
 .intro .flex .note .btn .about:hover {
-  background-color: rgb(106, 72, 165);
+  background-color: rgb(255, 255, 255);
 }
 
 /* Site choice */
-
 .projects {
   margin-top: 100px;
 }
+
 .projects .head {
   color: rgb(206, 201, 248);
   text-align: center;
@@ -213,15 +217,15 @@ h3 {
 }
 
 .projects .images .site a img:hover {
-  width: 360px;
-  height: 360px;
+  box-shadow: 1px 1px 1px 1px;
 }
 
-/* tool i use */
-
+/* Tools I Use */
 .tools {
+  text-align: center;
   margin-top: 100px;
 }
+
 .tools .head {
   color: rgb(206, 201, 248);
   text-align: center;
@@ -230,28 +234,37 @@ h3 {
 }
 
 .tools .icons {
-  display: block;
-  text-align: center;
-  font-size: 5em;
-  color: rgb(109, 41, 226);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
-.tools .icons .grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  margin-bottom: 50px;
+.tools .grid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
 }
+
+.tools .grid img {
+  margin: 0 10px;
+  width: 50px;
+}
+
 /* Footer */
 .footer-grid {
   color: rgb(206, 201, 248);
   background-color: rgb(54, 50, 67);
 }
+
 .footer-grid .main {
   display: grid;
   grid-template-columns: 2fr 1fr 1fr 1fr;
   gap: 30px;
   margin-top: 100px;
-
   padding: 30px;
 }
 
@@ -325,4 +338,149 @@ h3 {
 
 .projects #images2 {
   display: none;
+}
+
+/* hamburger button style */
+
+.hamburger-button {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  z-index: 1000;
+}
+
+.hamburger-button .hamburger-line {
+  width: 30px;
+  height: 3px;
+  background: rgb(201, 214, 248);
+  margin: 6px 0;
+}
+
+/* Mobile menu style*/
+.mobile-menu {
+  position: fixed;
+  top: 0px;
+  right: -300px;
+  width: 250px;
+  height: 100%;
+  z-index: 10;
+  background-color: rgb(35, 39, 73);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  transition: right 0.4s ease-in-out;
+}
+
+.mobile-menu.active {
+  right: 0px;
+}
+
+.mobile-menu ul {
+  margin-top: 70px;
+}
+
+.mobile-menu ul li {
+  padding-right: 40px;
+  margin-bottom: 10px;
+}
+
+.mobile-menu ul li a {
+  font-size: 1.1rem;
+}
+
+/* Media Queries for Mobile */
+@media (max-width: 768px) {
+  .navbar .container {
+  }
+
+  .navbar .main-menu ul {
+    display: none;
+    flex-direction: column; /* Stack menu items vertically */
+  }
+
+  .navbar .hamburger-button {
+    display: block;
+  }
+  .intro {
+    background: url("/images/main.png") no-repeat center center;
+    background-size: cover;
+    position: relative;
+    color: white;
+    padding: 50px 20px;
+    z-index: 1;
+  }
+
+  .intro .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 0;
+  }
+
+  .intro .flex {
+    flex-direction: column;
+  }
+
+  .intro .note {
+    position: relative;
+  }
+
+  .intro .flex .note {
+    margin-right: 0; /* Remove right margin */
+    text-align: center; /* Center text */
+    font-size: 0.9em;
+  }
+
+  .intro .flex .note .btn {
+    text-align: center;
+  }
+
+  .intro .mypic {
+    display: none;
+  }
+
+  .intro .flex .note h1 {
+    display: block;
+  }
+
+  .intro .flex .mypic img {
+    height: 300px; /* Adjust image height for mobile */
+    margin-right: 0; /* Remove margin */
+    margin-top: 20px; /* Add margin for spacing */
+  }
+
+  .projects .grid h1 {
+    font-size: 1.5em; /* Adjust heading font size */
+  }
+
+  .projects .images .site {
+    grid-template-columns: 1fr; /* Single column layout */
+    text-align: center;
+  }
+
+  .projects .images .site a img {
+    width: 70%; /* Full width for images */
+    height: auto; /* Maintain aspect ratio */
+  }
+
+  .tools .grid img {
+    width: 30px; /* Adjust icon size */
+  }
+
+  .footer-grid .main {
+    grid-template-columns: 1fr; /* Stack footer items */
+    text-align: center; /* Center footer text */
+  }
+
+  .footer-grid .Owner {
+    flex-direction: column; /* Stack owner details */
+    align-items: center; /* Center align */
+  }
+
+  .footer-grid .Owner p {
+    font-size: 0.9em; /* Adjust font size */
+  }
 }

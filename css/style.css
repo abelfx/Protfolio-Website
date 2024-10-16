@@ -1,0 +1,328 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  font-family: sans-serif;
+}
+
+body {
+  background-color: rgb(35, 39, 73);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0px auto;
+  padding: 0px auto;
+}
+
+/* Navigaton Bar */
+.navbar {
+  padding: 10px;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  z-index: 1000;
+  background-color: rgb(35, 39, 73);
+}
+
+.navbar .container .logo {
+  display: block;
+  padding-top: 10px;
+  /* font-size: px; */
+}
+
+.navbar .container .logo a img {
+  width: 100px;
+}
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar .main-menu ul {
+  display: flex;
+}
+
+.navbar ul li {
+  list-style: none;
+}
+
+.navbar ul li a {
+  padding: 10px 20px;
+  display: block;
+  font-weight: 600;
+  transition: 0.3s;
+  text-decoration: none;
+  color: rgb(206, 201, 248);
+}
+
+.navbar ul li a:hover {
+  color: rgb(109, 41, 226);
+}
+
+.navbar ul li a i {
+  margin-right: 10px;
+}
+
+.navbar ul li a:last-child {
+  margin-left: 18px;
+}
+
+/* Introduction */
+.intro .flex {
+  display: flex;
+  color: rgb(206, 201, 248);
+  justify-content: space-between;
+  margin-top: 100px;
+}
+
+.intro .flex .note {
+  margin-right: 100px;
+  display: block;
+  margin-top: 15%;
+}
+
+.intro .flex .note h1 {
+  display: flex;
+  font-weight: bold;
+  font-size: 3.5em;
+}
+
+.intro .flex .note h2 {
+  font-weight: bold;
+  font-size: 2.5em;
+}
+.intro .flex .note h1 .violet {
+  color: rgb(109, 41, 226);
+}
+
+.intro .flex .note h3 {
+  font-size: 0.9em;
+  margin-bottom: 30px;
+}
+.intro .flex h1,
+h2,
+h3 {
+  padding: 10px;
+}
+
+.intro .flex .mypic {
+  margin-right: 0px;
+}
+
+.intro .flex .mypic img {
+  border-radius: 100px;
+  height: 550px;
+  margin-right: 50px;
+}
+
+.intro .flex .note .btn {
+  display: flex;
+}
+
+.intro .flex .note .btn .contact,
+.about {
+  background-color: transparent;
+  font-size: 1em;
+  border: groove 1px;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-weight: bold;
+}
+
+.intro .flex .note .btn .contact a,
+.about a {
+  color: rgb(206, 201, 248);
+  text-decoration: none;
+}
+.intro .flex .note .btn .contact {
+  background-color: rgb(109, 41, 226);
+  margin-right: 5px;
+  margin-left: 10%;
+  transition: 0.3s;
+}
+
+.intro .flex .note .btn .about {
+  background-color: rgb(158, 113, 237);
+  color: black;
+}
+
+.intro .flex .note .btn .contact:hover {
+  background-color: rgb(42, 31, 62);
+  color: rgb(58, 2, 155);
+  cursor: pointer;
+}
+
+.intro .flex .note .btn .about:hover {
+  background-color: rgb(106, 72, 165);
+}
+
+/* Site choice */
+
+.projects {
+  margin-top: 100px;
+}
+.projects .head {
+  color: rgb(206, 201, 248);
+  text-align: center;
+  margin-bottom: 70px;
+  font-size: 2.5em;
+}
+
+.projects .grid {
+  color: rgb(206, 201, 248);
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.projects .grid h1 {
+  margin-right: 20px;
+}
+
+.projects .grid .active {
+  color: rgb(109, 41, 226);
+  border-bottom: rgb(109, 41, 226) solid 3px;
+}
+
+.projects .grid #heading1:hover:not(.active) {
+  color: rgb(167, 122, 244);
+}
+
+.projects .grid #heading2:hover:not(.active) {
+  color: rgb(167, 122, 244);
+}
+
+.projects .images .site {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 15px;
+}
+
+.projects .images .site a img {
+  width: 350px;
+  height: 350px;
+  border: grey groove;
+  border-radius: 20px;
+}
+
+.projects .images .site p {
+  text-align: center;
+  color: rgb(206, 201, 248);
+}
+
+.projects .images .site a img:hover {
+  width: 360px;
+  height: 360px;
+}
+
+/* tool i use */
+
+.tools {
+  margin-top: 100px;
+}
+.tools .head {
+  color: rgb(206, 201, 248);
+  text-align: center;
+  margin-bottom: 70px;
+  font-size: 2.5em;
+}
+
+.tools .icons {
+  display: block;
+  text-align: center;
+  font-size: 5em;
+  color: rgb(109, 41, 226);
+}
+
+.tools .icons .grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-bottom: 50px;
+}
+/* Footer */
+.footer-grid {
+  color: rgb(206, 201, 248);
+  background-color: rgb(54, 50, 67);
+}
+.footer-grid .main {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: 30px;
+  margin-top: 100px;
+
+  padding: 30px;
+}
+
+.footer-grid .grid img {
+  width: 150px;
+}
+
+.footer-grid .grid2 ul li {
+  list-style: none;
+  margin-left: 0px;
+  padding-left: 0px;
+}
+
+.footer-grid .grid2 ul li a {
+  text-decoration: none;
+}
+
+.footer-grid .main .grid p {
+  font-weight: bold;
+  font-size: 0.8em;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+.footer-grid .main .grid .icons a {
+  margin-right: 10px;
+  border-style: none;
+  background-color: rgb(106, 107, 106);
+  color: #fff;
+  border-radius: 4px;
+  padding: 7px;
+}
+
+.footer-grid .main .grid2 ul li a {
+  color: rgb(149, 148, 156);
+}
+
+.footer-grid .main .grid2 ul li a:hover {
+  color: rgb(206, 201, 248);
+}
+
+.footer-grid .main .grid2 ul li {
+  margin-top: 10px;
+  font-size: 0.9em;
+}
+
+.footer-grid .main .grid2 p {
+  margin-top: 10px;
+  font-size: 0.9em;
+  color: rgb(149, 148, 156);
+}
+
+.footer-grid .Owner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-grid .Owner p {
+  color: rgb(206, 201, 248);
+  font-size: 0.8em;
+}
+
+.footer-grid .Owner p a {
+  color: rgb(165, 163, 187);
+  font-size: 1em;
+}
+
+.footer-grid .Owner p a:hover {
+  color: rgb(206, 201, 248);
+}
+
+.projects #images2 {
+  display: none;
+}

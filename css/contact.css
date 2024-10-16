@@ -1,0 +1,210 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  font-family: sans-serif;
+}
+
+body {
+  background-color: rgb(35, 39, 73);
+}
+
+/* Navigaton Bar */
+.navbar {
+  padding: 10px;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  z-index: 1000;
+  background-color: rgb(35, 39, 73);
+}
+
+.navbar .container .logo {
+  display: block;
+  padding-top: 10px;
+  /* font-size: px; */
+}
+
+.navbar .container .logo a img {
+  width: 100px;
+}
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar .main-menu ul {
+  display: flex;
+}
+
+.navbar ul li {
+  list-style: none;
+}
+
+.navbar ul li a {
+  padding: 10px 20px;
+  display: block;
+  font-weight: 600;
+  transition: 0.3s;
+  text-decoration: none;
+  color: rgb(206, 201, 248);
+}
+
+.navbar ul li a:hover {
+  color: rgb(109, 41, 226);
+}
+
+.navbar ul li a i {
+  margin-right: 10px;
+}
+
+.navbar ul li a:last-child {
+  margin-left: 18px;
+}
+
+/* form */
+.form {
+  max-width: 600px;
+  margin: 200px auto;
+  font-size: 1.5em;
+  display: block;
+  padding: 40px;
+  border: 1px groove white;
+  border-radius: 20px;
+  box-sizing: border-box; /* Include padding and border in width calculation */
+}
+
+.form h2 {
+  color: rgb(206, 201, 248);
+  margin-bottom: 30px;
+}
+
+.form label {
+  color: rgb(206, 201, 248);
+  font-size: 0.8em;
+  margin-bottom: 15px;
+}
+
+.form input,
+.form #message {
+  margin-top: 10px;
+  background-color: transparent;
+  color: rgb(206, 201, 248);
+  width: 100%;
+  box-sizing: border-box;
+  height: 50px;
+  font-size: 1.1em;
+  padding: 4px;
+  border-radius: 5px;
+}
+
+.form input {
+  border: 1px groove white;
+}
+
+.form #message {
+  height: 150px;
+}
+.form .button {
+  color: rgb(206, 201, 248);
+  background-color: rgb(109, 41, 226);
+  margin-top: 10px;
+  padding: 20px 20px;
+  font-size: 0.7em;
+  font-weight: bold;
+  border-radius: 15px;
+  transition: 0.5s;
+  width: 100%;
+}
+
+.form .button:hover {
+  background-color: white;
+  color: rgb(109, 41, 226);
+}
+
+.right {
+  color: white;
+}
+
+/* Footer */
+.footer-grid {
+  color: rgb(206, 201, 248);
+  background-color: rgb(54, 50, 67);
+}
+.footer-grid .main {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: 30px;
+  margin-top: 100px;
+
+  padding: 30px;
+}
+
+.footer-grid .grid img {
+  width: 150px;
+}
+
+.footer-grid .grid2 ul li {
+  list-style: none;
+  margin-left: 0px;
+  padding-left: 0px;
+}
+
+.footer-grid .grid2 ul li a {
+  text-decoration: none;
+}
+
+.footer-grid .main .grid p {
+  font-weight: bold;
+  font-size: 0.8em;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+.footer-grid .main .grid .icons a {
+  margin-right: 10px;
+  border-style: none;
+  background-color: rgb(106, 107, 106);
+  color: #fff;
+  border-radius: 4px;
+  padding: 7px;
+}
+
+.footer-grid .main .grid2 ul li a {
+  color: rgb(149, 148, 156);
+}
+
+.footer-grid .main .grid2 ul li a:hover {
+  color: rgb(206, 201, 248);
+}
+
+.footer-grid .main .grid2 ul li {
+  margin-top: 10px;
+  font-size: 0.9em;
+}
+
+.footer-grid .main .grid2 p {
+  margin-top: 10px;
+  font-size: 0.9em;
+  color: rgb(149, 148, 156);
+}
+
+.footer-grid .Owner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-grid .Owner p {
+  color: rgb(206, 201, 248);
+  font-size: 0.8em;
+}
+
+.footer-grid .Owner p a {
+  color: rgb(165, 163, 187);
+  font-size: 1em;
+}
+
+.footer-grid .Owner p a:hover {
+  color: rgb(206, 201, 248);
+}

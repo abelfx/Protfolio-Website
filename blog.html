@@ -5,18 +5,125 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Blogs</title>
 
+    <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/blogs.css" />
     <link rel="icon" href="images/logoo.png" />
   </head>
   <body>
-    <div class="container">
-      <h1>BLOGS</h1>
+    <nav class="navbar">
+      <div class="container">
+        <div class="logo">
+          <a href="index.html">
+            <img src="images/logoo.png" alt="my logo" />
+          </a>
+        </div>
+        <div class="main-menu">
+          <ul>
+            <li class="nav-link"><a href="index.html">Home</a></li>
+            <li class="nav-link"><a href="resume.html">Resume</a></li>
+            <li class="nav-link"><a href="blog.html">Blog</a></li>
+            <li class="nav-link">
+              <a class="btn" href="aboutme.html">
+                <i class="fas fa-user"></i> About Me
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <botton id="hamburger-button" class="hamburger-button">
+          <div class="hamburger-line"></div>
+          <div class="hamburger-line"></div>
+          <div class="hamburger-line"></div>
+        </botton>
+
+        <!--Mobile Menu-->
+        <div class="mobile-menu">
+          <ul>
+            <li class="nav-link"><a href="index.html">Home</a></li>
+            <li class="nav-link"><a href="resume.html">Resume</a></li>
+            <li class="nav-link"><a href="blog.html">Blog</a></li>
+            <li class="nav-link">
+              <a class="btn" href="aboutme.html">
+                <i class="fas fa-user"></i>About Me</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <h1>BLOGS</h1>
+    <div class="hero">
+      <article class="blog">
+        <div class="video">
+          <video src="/videos/Blog1.mp4" type="video/mp4" controls></video>
+        </div>
+
+        <div class="description">
+          <div class="date">
+            <p class="p1">01</p>
+            <p class="p2">NOV</p>
+          </div>
+
+          <p class="title">Front End Development is Changing rapidly!</p>
+        </div>
+      </article>
     </div>
   </body>
 
-  <style>
-    body {
-      background-color: darkblue;
-    }
-  </style>
+  <footer>
+    <div class="footer-grid">
+      <div class="main container">
+        <div class="grid">
+          <img src="images/logoo.png" />
+          <p>Crafting Your Digital Presence with Precision</p>
+          <div class="icons">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-tiktok"></i></a>
+          </div>
+        </div>
+
+        <div class="grid2">
+          <h4>Useful Links</h4>
+          <ul>
+            <li><a href="#">Support</a></li>
+            <li><a href="#">Terms Of Use</a></li>
+            <li><a href="#">Site Map</a></li>
+            <li><a href="#">Expert Testimony</a></li>
+          </ul>
+        </div>
+
+        <div class="grid2">
+          <h4>My Services</h4>
+          <ul>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Track Progress</a></li>
+            <li><a href="#">Refund Policy</a></li>
+            <li><a href="#">My Account</a></li>
+          </ul>
+        </div>
+
+        <div class="grid2">
+          <h4>Contact Me</h4>
+          <p>Working Hours</p>
+          <p>Monday-Friday</p>
+          <p>2:00AM-5:00PM local</p>
+          <p>Address</p>
+          <p>Mehandis Sefer Infront Of Saint Gebriel</p>
+        </div>
+      </div>
+      <div class="Owner">
+        <p>&copy;All rights Reserved by Abel Tesfa</p>
+        <p>Developer: Abel Tesfa</p>
+        <p>
+          Contact:
+          <a href="mailto: abeltesfa198@gmail.com"> abeltesfa198@gmail.com</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/contact.js"></script>
 </html>

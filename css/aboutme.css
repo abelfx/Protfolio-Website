@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: rgb(206, 201, 248);
+  background: linear-gradient(135deg, rgb(35, 39, 73), rgb(46, 51, 98));
+}
+
+.hero-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 50px 20px;
+  color: #fff;
+}
+
+.hero-content {
+  margin-top: 200px;
+  max-width: 600px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.skills ul li {
+  list-style: none;
+  padding: 5px;
+}
+
+.skills {
+  padding: 30px 10px;
+}
+p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.contact-btn {
+  color: rgb(206, 201, 248);
+  background-color: rgb(109, 41, 226);
+  margin-top: 10px;
+  padding: 20px 20px;
+  font-size: 1.2em;
+  font-weight: bold;
+  border-radius: 15px;
+  transition: 0.5s;
+  width: 70%;
+}
+
+.contact-btn:hover {
+  background-color: white;
+  color: rgb(109, 41, 226);
+  cursor: pointer;
+}

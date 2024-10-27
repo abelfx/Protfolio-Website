@@ -46,10 +46,10 @@ body {
 
 .navbar ul li {
   list-style: none;
+  padding: 10px 30px;
 }
 
 .navbar ul li a {
-  padding: 10px 20px;
   display: block;
   font-weight: 600;
   transition: 0.3s;
@@ -63,6 +63,10 @@ body {
 
 .navbar ul li a i {
   margin-right: 10px;
+}
+
+.navbar ul li a.active {
+  border-bottom: 2px solid rgb(206, 201, 248);
 }
 
 .navbar ul li a:last-child {
@@ -209,6 +213,7 @@ h3 {
   height: 350px;
   border: grey groove;
   border-radius: 20px;
+  transition: transform 0.3s ease;
 }
 
 .projects .images .site p {
@@ -217,7 +222,8 @@ h3 {
 }
 
 .projects .images .site a img:hover {
-  box-shadow: 1px 1px 1px 1px;
+  transform: scaleY(1.05);
+  box-shadow: 10px 10px 20px rgba(128, 128, 128, 0.3);
 }
 
 /* Tools I Use */

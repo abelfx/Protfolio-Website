@@ -3,8 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>A-T | Contact</title>
-    <link rel="stylesheet" href="css/contact.css" />
+    <title>About Me</title>
+
+    <link rel="icon" href="images/logoo.png" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/aboutme.css" />
 
     <!--links for icons and fonts used-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -20,8 +23,6 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-
-    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <!-- navigation section-->
@@ -35,10 +36,10 @@
         </div>
         <div class="main-menu">
           <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="#">Resume</a></li>
-            <li><a href="#">Hobbies</a></li>
-            <li>
+            <li class="nav-link"><a href="index.html">Home</a></li>
+            <li class="nav-link"><a href="#">Resume</a></li>
+            <li class="nav-link"><a href="#">Blog</a></li>
+            <li class="nav-link">
               <a class="btn" href="aboutme.html">
                 <i class="fas fa-user"></i> About Me
               </a>
@@ -55,10 +56,10 @@
         <!--Mobile Menu-->
         <div class="mobile-menu">
           <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="aboutme.html">Resume</a></li>
-            <li><a href="../views/Blog">Blog</a></li>
-            <li>
+            <li class="nav-link"><a href="index.html">Home</a></li>
+            <li class="nav-link"><a href="">Resume</a></li>
+            <li class="nav-link"><a href="../views/Blog">Blog</a></li>
+            <li class="nav-link">
               <a class="btn" href="aboutme.html">
                 <i class="fas fa-user"></i>About Me</a
               >
@@ -68,31 +69,49 @@
       </div>
     </nav>
 
-    <!-- form section-->
-    <form class="form">
-      <h2 id="mainhead">Drop me a Message</h2>
-      <label for="name"> FULL NAME:</label>
-      <br />
-      <input type="text" id="name" />
-      <br /><br />
+    <!-- hero section-->
+    <div class="hero-section">
+      <div class="hero-content">
+        <h1>Hello, I'm Abel Tesfa</h1>
+        <p>
+          I'm a third-year Software Engineering student at Addis Ababa
+          University, passionate about building creative and dynamic
+          applications. Currently diving into full-stack development, I’m
+          constantly exploring ways to design seamless user experiences and
+          develop efficient backend systems. From working on personal projects
+          to collaborative team efforts, I’m dedicated to honing my skills and
+          contributing to meaningful software solutions.
+        </p>
 
-      <label for="mail"> EMAIL:</label>
-      <br />
-      <input type="mail" id="sub" />
-      <br /><br />
+        <div class="skills">
+          <h2>Skills</h2>
+          <ul>
+            <li>
+              <strong>Frontend Development:</strong> HTML, CSS, JavaScript,
+              React, Redux, Zustand
+            </li>
+            <li>
+              <strong>Backend Development:</strong> Node.js, Express, REST APIs
+            </li>
+            <li><strong>Database Management:</strong> MongoDB, MySQL</li>
+            <li><strong>Version Control:</strong> Git, GitHub</li>
+          </ul>
+        </div>
 
-      <label for="sub">SUBJECT:</label>
-      <br />
-      <input type="text" id="sub" />
-      <br /><br />
+        <p>
+          If you would like to connect with me on social media, please feel free
+          to explore the links below. For any inquiries or further
+          communication, kindly navigate to the Contact Me page, where you can
+          reach out directly. I look forward to connecting with you!
+        </p>
 
-      <label for="message">YOUR MESSAGE:</label>
-      <br />
-      <textarea name="message" id="message"></textarea>
-      <br /><br />
+        <a href="contactMe.html"
+          ><button class="contact-btn">Contact me</button></a
+        >
+      </div>
+    </div>
 
-      <button class="button">SEND MESSAGE:</button>
-    </form>
+    <!--Footer-->
 
     <footer>
       <div class="footer-grid">

@@ -5,63 +5,123 @@
 }
 
 body {
-  color: white;
+  color: rgb(206, 201, 248);
 }
 
-h1 {
-  text-align: center;
-  margin-top: 150px;
-}
 .hero {
+  margin-top: 300px;
+  margin-bottom: 260px;
   padding: 0px;
   display: flex;
   height: 70vh;
+  gap: 20px;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.hero .blog {
-  max-width: 500px;
-  border: 1px solid white;
-  border-radius: 10px;
+.hero .menu {
+  display: flex;
+  gap: 230px;
+  padding: 50px;
 }
-.hero .blog .video {
+
+.hero .menu .search-bar {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.hero video {
-  border-radius: 10px;
-  max-width: 500px;
-  padding: 10px;
+
+.hero .menu .search-bar input {
+  background-color: rgb(44, 48, 83);
+  border: none;
+  width: 300px;
+  height: 40px;
+  border-radius: 15px;
+  padding-left: 10px;
+  font-size: 15px;
+  color: rgb(239, 234, 252);
 }
 
-.hero .blog .description {
-  display: grid;
-  grid-template-columns: 1fr 4fr;
-}
-
-.hero .blog .description .date {
-  padding: 5px;
-}
-
-.hero .blog .description .date .p1 {
-  text-align: center;
-  padding: 5px;
-  font-size: 1.1em;
-}
-.hero .blog .description .date .p2 {
+.hero .menu .new-post a {
   border: 1px solid white;
-  text-align: center;
-  padding: 5px;
-  background-color: white;
-  color: rgb(35, 39, 73);
-  font-weight: bold;
-  border-radius: 4px;
+  padding: 6px;
+  text-decoration: none;
+  background-color: rgb(223, 217, 248);
+  border-radius: 5px;
 }
 
-.hero .blog .description .title {
-  text-align: center;
-  padding-top: 20px;
-  font-size: 1.2em;
+.hero .blog {
+  background-color: rgb(44, 48, 83);
+  font-size: 12px;
+  width: 320px;
+  height: 37-px;
+  border: 1px solid rgb(206, 201, 248);
+  border-radius: 10px;
+}
+
+.hero .blog h2 {
+  padding: 15px;
+}
+
+.hero .blog .second-line {
+  padding-left: 15px;
+  padding-bottom: 5px;
+  display: flex;
+  gap: 20px;
+}
+
+.hero .blog .second-line p {
+  border: 1px solid rgb(206, 201, 248);
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.hero .blog .third-line {
+  padding-left: 15px;
+  padding-bottom: 30px;
+}
+
+.hero .blog:hover {
+  border: 1px solid white;
+  box-shadow: 10px 10px 20px rgba(128, 128, 128, 0.3);
+  cursor: pointer;
+}
+
+.hero .blog .video-container {
+  display: flex;
+  justify-content: center;
+}
+
+.hero .blog video {
+  max-width: 300px;
+  border-radius: 10px;
+}
+
+.hero .blog .bottom-line {
+  padding: 15px;
+  font-size: 15px;
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+}
+.hero .blog .bottom-line .up-vote {
+  display: flex;
+  gap: 5px;
+}
+
+.hero .blog .bottom-line .down-vote {
+  display: flex;
+  gap: 5px;
+}
+
+.hero .blog .bottom-line .comments {
+  display: flex;
+  gap: 5px;
+}
+
+.hero .first-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2em;
 }

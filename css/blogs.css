@@ -30,6 +30,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 
 .hero .menu .search-bar input {
@@ -124,4 +125,20 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 2em;
+}
+
+@media (max-width: 768px) {
+  .hero .first-row {
+    grid-template-columns: 1fr;
+  }
+
+  .menu {
+    flex-direction: column;
+    gap: 2px;
+  }
+  .hero {
+    margin-top: 1000px;
+    justify-content: center;
+    padding-bottom: 1300px;
+  }
 }

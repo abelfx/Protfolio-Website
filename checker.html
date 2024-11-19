@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfolio of Abel Tesfa, a web and mobile developer."
+    />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" href="images/logoo.png" />
+
+    <!-- Links for icons and fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,700;1,300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <header class="navbar">
+      <div class="container">
+        <div class="logo">
+          <a href="index.html" aria-label="Home">
+            <img src="images/logoo.png" alt="Portfolio logo" />
+          </a>
+        </div>
+        <nav class="main-menu" aria-label="Primary Navigation">
+          <ul>
+            <li class="nav-link active"><a href="index.html">Home</a></li>
+            <li class="nav-link"><a href="resume.html">Resume</a></li>
+            <li class="nav-link"><a href="blog.html">Blog</a></li>
+            <li class="nav-link">
+              <a class="btn" href="aboutme.html" aria-label="About Me">
+                <i class="fas fa-user" aria-hidden="true"></i> About Me
+              </a>
+            </li>
+            <li>
+              <button
+                aria-label="Toggle dark mode"
+                class="mode"
+                aria-pressed="false"
+              >
+                <i class="fas fa-moon"></i>
+              </button>
+            </li>
+          </ul>
+        </nav>
+
+        <button
+          id="hamburger-button"
+          class="hamburger-button"
+          aria-label="Toggle mobile menu"
+          aria-expanded="false"
+        >
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+
+        <!-- Mobile Menu -->
+        <nav class="mobile-menu" aria-label="Mobile Navigation">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li>
+              <a class="btn" href="aboutme.html">
+                <i class="fas fa-user" aria-hidden="true"></i> About Me
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Introduction Section -->
+    <main>
+      <section class="intro container" aria-labelledby="intro-heading">
+        <div class="overlay"></div>
+        <div class="flex">
+          <div class="note">
+            <h1 id="intro-heading">
+              Hi,
+              <span class="violet">I'm Abel Tesfa</span>
+            </h1>
+            <p class="intro-subheading">Web and Mobile Developer</p>
+            <p>Creates and Maintains Apps and Websites</p>
+
+            <div class="btn">
+              <a class="contact" href="contactMe.html">Contact me</a>
+              <a class="about" href="aboutme.html">About me</a>
+            </div>
+          </div>
+
+          <figure class="mypic container">
+            <img
+              src="images/main.png"
+              alt="Portrait of Abel Tesfa, Web and Mobile Developer"
+            />
+          </figure>
+        </div>
+      </section>
+
+      <!-- Projects Section -->
+      <section class="projects" aria-labelledby="projects-heading">
+        <h1 id="projects-heading" class="head">Real World Projects</h1>
+        <div class="grid">
+          <button
+            id="heading1"
+            class="active"
+            aria-label="View websites"
+            aria-expanded="true"
+          >
+            Website
+          </button>
+          <button id="heading2" aria-label="View applications">
+            Application
+          </button>
+        </div>
+        <div class="images" id="images1">
+          <div class="site container">
+            <figure>
+              <a href="https://abelsass.netlify.app/">
+                <img src="images/saas.jpg" alt="Screenshot of SAAS Website" />
+              </a>
+              <figcaption>SAAS Website</figcaption>
+            </figure>
+            <figure>
+              <a href="https://burgerhouse00.netlify.app/">
+                <img
+                  src="images/restaurant.jpg"
+                  alt="Screenshot of Restaurant Website"
+                />
+              </a>
+              <figcaption>Restaurant Website</figcaption>
+            </figure>
+            <figure>
+              <a href="https://ethio-apex.netlify.app/">
+                <img
+                  src="images/ethio-apex.jpg"
+                  alt="Screenshot of Ethio Apex Website"
+                />
+              </a>
+              <figcaption>Ethio Apex Website</figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

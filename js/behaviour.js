@@ -46,4 +46,13 @@ document.addEventListener("DOMContentLoaded", () => {
       link.classList.remove("active");
     }
   });
+
+  const mode = document.querySelector(".mode");
+  document.querySelector(".mode").addEventListener("click", () => {
+    mode.classList.toggle("fa-sun");
+    mode.classList.toggle("fa-moon");
+
+    document.body.classList.toggle("light-mode");
+    document.querySelector(".navbar").classList.toggle("light-mode");
+  });
 });

@@ -49,6 +49,15 @@ body {
   padding: 10px 30px;
 }
 
+.navbar ul li .fas {
+  color: rgb(206, 201, 248);
+  font-size: 1.2em;
+}
+
+/* .navbar ul li .fas:hover {
+  font-size: 1.1em;
+} */
+
 .navbar ul li a {
   display: block;
   font-weight: 600;
@@ -399,7 +408,19 @@ h3 {
   font-size: 1.1rem;
 }
 
+/* light mode functionality*/
+body.light-mode {
+  background-color: white; /* These are white for now but will change later*/
+  color: black;
+}
+
+.navbar.light-mode {
+  background-color: white;
+  color: black;
+}
+
 /* Media Queries for Mobile */
+
 @media (max-width: 768px) {
   .navbar {
     padding: 2px;
@@ -464,9 +485,9 @@ h3 {
   }
 
   .intro .flex .mypic img {
-    height: 300px; /* Adjust image height for mobile */
-    margin-right: 0; /* Remove margin */
-    margin-top: 20px; /* Add margin for spacing */
+    height: 300px;
+    margin-right: 0;
+    margin-top: 20px;
   }
 
   .projects .head {
@@ -474,11 +495,11 @@ h3 {
   }
 
   .projects .grid h1 {
-    font-size: 1.5em; /* Adjust heading font size */
+    font-size: 1.5em;
   }
 
   .projects .images .site {
-    grid-template-columns: 1fr; /* Single column layout */
+    grid-template-columns: 1fr;
     text-align: center;
   }
 

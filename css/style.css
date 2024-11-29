@@ -5,8 +5,28 @@
   font-family: sans-serif;
 }
 
+:root {
+  /* Default theme variables */
+  --background-color: rgb(35, 39, 73);
+  --text-color: rgb(206, 201, 248);
+  --hamburger-btn: rgb(201, 214, 248);
+  --contactMe: rgb(201, 214, 248);
+  --aboutMe: rgb(109, 41, 226);
+  --footer: rgb(54, 50, 67);
+}
+
+/* light mode overrides */
+[data-theme="light"] {
+  --background-color: rgb(206, 201, 248);
+  --text-color: rgb(35, 39, 73);
+  --hamburger-btn: rgb(35, 39, 73);
+  --contactMe: rgb(201, 214, 248);
+  --aboutMe: rgb(201, 214, 248);
+  --footer: rgb(149, 143, 170);
+}
+
 body {
-  background-color: rgb(35, 39, 73);
+  background-color: var(--background-color);
 }
 
 .container {
@@ -22,7 +42,7 @@ body {
   top: 0px;
   width: 100%;
   z-index: 1000;
-  background-color: rgb(35, 39, 73);
+  background-color: var(--background-color);
 }
 
 .navbar .container .logo {
@@ -50,20 +70,16 @@ body {
 }
 
 .navbar ul li .fas {
-  color: rgb(206, 201, 248);
+  color: var(--text-color);
   font-size: 1.2em;
 }
-
-/* .navbar ul li .fas:hover {
-  font-size: 1.1em;
-} */
 
 .navbar ul li a {
   display: block;
   font-weight: 600;
   transition: 0.3s;
   text-decoration: none;
-  color: rgb(206, 201, 248);
+  color: var(--text-color);
 }
 
 .navbar ul li a:hover {
@@ -75,7 +91,7 @@ body {
 }
 
 .navbar ul li a.active {
-  border-bottom: 2px solid rgb(206, 201, 248);
+  border-bottom: 2px solid var(--text-color);
 }
 
 .navbar ul li a:last-child {
@@ -85,7 +101,7 @@ body {
 /* Introduction */
 .intro .flex {
   display: flex;
-  color: rgb(206, 201, 248);
+  color: var(--text-color);
   justify-content: space-between;
   margin-top: 100px;
 }
@@ -147,12 +163,12 @@ h3 {
 }
 
 .intro .flex .note .btn .contact a {
-  color: rgb(206, 201, 248);
+  color: var(--contactMe);
   text-decoration: none;
 }
 
 .intro .flex .note .btn .about a {
-  color: rgb(109, 41, 226);
+  color: var(--aboutMe);
   text-decoration: none;
 }
 
@@ -163,7 +179,7 @@ h3 {
 }
 
 .intro .flex .note .btn .about {
-  background-color: rgb(206, 201, 248);
+  background-color: var(--text-color);
 }
 
 .intro .flex .note .btn .contact:hover {
@@ -181,14 +197,14 @@ h3 {
 }
 
 .projects .head {
-  color: rgb(206, 201, 248);
+  color: var(--text-color);
   text-align: center;
   margin-bottom: 70px;
   font-size: 2.5em;
 }
 
 .projects .grid {
-  color: rgb(206, 201, 248);
+  color: var(--text-color);
   display: flex;
   justify-content: center;
   margin-bottom: 40px;
@@ -227,7 +243,7 @@ h3 {
 
 .projects .images .site p {
   text-align: center;
-  color: rgb(206, 201, 248);
+  color: var(--text-color);
 }
 
 .projects .images .site a img:hover {
@@ -242,7 +258,7 @@ h3 {
 }
 
 .tools .head {
-  color: rgb(206, 201, 248);
+  color: var(--text-color);
   text-align: center;
   margin-bottom: 70px;
   font-size: 2.5em;
@@ -276,8 +292,8 @@ h3 {
 
 /* Footer */
 .footer-grid {
-  color: rgb(206, 201, 248);
-  background-color: rgb(54, 50, 67);
+  color: var(--text-color);
+  background-color: var(--footer);
 }
 
 .footer-grid .main {
@@ -319,11 +335,11 @@ h3 {
 }
 
 .footer-grid .main .grid2 ul li a {
-  color: rgb(149, 148, 156);
+  color: var(--text-color);
 }
 
 .footer-grid .main .grid2 ul li a:hover {
-  color: rgb(206, 201, 248);
+  color: var(--text-color);
 }
 
 .footer-grid .main .grid2 ul li {
@@ -343,7 +359,7 @@ h3 {
 }
 
 .footer-grid .Owner p {
-  color: rgb(206, 201, 248);
+  color: var(--text-color);
   font-size: 0.8em;
 }
 
@@ -353,7 +369,7 @@ h3 {
 }
 
 .footer-grid .Owner p a:hover {
-  color: rgb(206, 201, 248);
+  color: var(--text-color);
 }
 
 .projects #images2 {
@@ -374,7 +390,7 @@ h3 {
 .hamburger-button .hamburger-line {
   width: 30px;
   height: 3px;
-  background: rgb(201, 214, 248);
+  background: var(--hamburger-btn);
   margin: 6px 0;
 }
 
@@ -406,17 +422,6 @@ h3 {
 
 .mobile-menu ul li a {
   font-size: 1.1rem;
-}
-
-/* light mode functionality*/
-body.light-mode {
-  background-color: white; /* These are white for now but will change later*/
-  color: black;
-}
-
-.navbar.light-mode {
-  background-color: white;
-  color: black;
 }
 
 /* Media Queries for Mobile */

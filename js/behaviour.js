@@ -52,7 +52,11 @@ document.addEventListener("DOMContentLoaded", () => {
     mode.classList.toggle("fa-sun");
     mode.classList.toggle("fa-moon");
 
-    document.body.classList.toggle("light-mode");
+    const currentTheme = document.documentElement.getAttribute("data-theme");
+    document.documentElement.setAttribute(
+      "data-theme",
+      currentTheme === "dark" ? "light" : "dark"
+    );
     document.querySelector(".navbar").classList.toggle("light-mode");
   });
 });
